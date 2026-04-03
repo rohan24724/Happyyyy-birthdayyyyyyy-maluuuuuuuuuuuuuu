@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>For Maluuuuuu 💖</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Caveat:wght@400;600&family=Jost:wght@200;300;400&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <section id="page-start" class="page active">
+            <button id="start-btn" class="fire-btn">
+                <canvas id="btn-canvas"></canvas>
+                <span>let's begin ✦</span>
+            </button>
+        </section>
+        <section id="page-intro" class="page" onclick="nextPage()">
+            <canvas id="rain-canvas"></canvas>
+            <h1 id="main-name"></h1>
+            <p id="subtitle">something special for you…</p>
+            <p id="tap-hint">tap to continue</p>
+        </section>
+        <section id="page-question" class="page">
+            <p id="question">What do you call me?</p>
+            <div id="input">
+                <input type="text" id="answer-input" placeholder="..." />
+            </div>
+            <button id="answer-btn"><span>Unlock ⟡</span></button>
+            <p id="answer-error"></p>
+        </section>
+        <section id="page-photos" class="page">
+            <p class="section-label">captured moments ✦</p>
+            <div id="photo-wall">
+                <img
+                    src="https://i.ibb.co/x8FbCpZC/file-0000000083cc71fa83bebbdb967cde1a-2.png"
+                />
+                <img
+                    src="https://i.ibb.co/ZRLkyM8Q/IMG-20260329-WA0004-3.jpg"
+                />
+                <img src="https://i.ibb.co/RTRDwBFK/Snapchat-611949897-3.jpg" />
+                <img src="https://i.ibb.co/hR2P7qMQ/Snapchat-927249252.jpg" />
+                <img
+                    src="https://i.ibb.co/21K6gd0z/IMG-20260329-WA0005-2.jpg"
+                />
+                <img
+                    src="https://i.ibb.co/5xJVRk2Y/file-00000000816871fa9cd48530432d5214.png"
+                />
+            </div>
+            <p id="photos-next" onclick="nextPage()">continue…</p>
+        </section>
+        <section id="page-memories" class="page">
+            <div id="memories-scroll">
+                <p class="section-label">us, always ♡</p>
+                <div id="memory-cards">
+                    <div class="memory-card">
+                        <p class="memory-text">
+                            I still remember the first time we met, on the
+                            friendship day [3rd August, 2025] shaam ko randomly
+                            trese mulakat huyi.. You were talking with pagalpur
+                            wasis and suddenly I came and you replied me.. at
+                            that time I didn't think much about our first
+                            meetup.. I was off that day but you made my day
+                            brighter.. we talked about (... I don't wanna
+                            remember that, you know it very well) but yeah
+                            somehow we ended up laughing.
+                        </p>
+                    </div>
+                    <div class="memory-card">
+                        <p class="memory-text">
+                            Even when you were super mad… like really really
+                            annoyed at me, I tried to push you away (yes, even
+                            blocked you 🙃). But you didn’t leave. You stayed.
+                            You stuck around through my chaos, my nonsense, my
+                            disappearing acts. You didn’t give up on me, even
+                            when I probably deserved it. You proved that no
+                            matter how messy things get, you’re not someone who
+                            just walks away.
+                        </p>
+                    </div>
+                    <div class="memory-card">
+                        <p class="memory-text">
+                            All those late night talks… they meant way more than
+                            I could ever say. Random memes at 2 AM, stupid
+                            jokes, arguing over nothing, sharing thoughts we’d
+                            never tell anyone else. We laughed, ranted, planned
+                            nonsense, and even overthought random stuff
+                            together. Those talks became our little world where
+                            chaos made sense, and silence didn’t feel awkward.
+                            Honestly, it’s crazy how just words on a screen
+                            could feel like so much more. Every late night made
+                            me realize… some things are simple but priceless.
+                        </p>
+                    </div>
+                    <div class="memory-card">
+                        <p class="memory-text">
+                            And somehow… we’re still here. After all the
+                            arguments over memes, the random disappearances, the
+                            late-night rants. The endless roasting and chaos,
+                            we’re still stuck together. Somehow, neither of us
+                            ran away, even when everything was messy and
+                            annoying. Somehow, despite all the chaos, it just
+                            works.
+                        </p>
+                    </div>
+                </div>
+                <p id="memories-next" onclick="nextPage()">continue…</p>
+            </div>
+        </section>
+        <section id="page-letter" class="page">
+            <p class="section-label letter-msg">a letter for you ✦</p>
+            <div id="envelope-wrap">
+                <div id="env-flap"></div>
+                <div id="env-body"></div>
+                <div id="env-bottom"></div>
+                <div id="letter">
+                    <div id="letter-text"></div>
+                    <div id="letter-signature"></div>
+                </div>
+            </div>
+            <p id="env-hint">tap to open ♡</p>
+        </section>
+        <section id="page-finale" class="page">
+            <canvas id="confetti-canvas"></canvas>
+            <canvas id="stars-canvas"></canvas>
+            <h1 id="finale-title">Happy Birthday Maluuuuuuuuu</h1>
+            <p id="finale-subtitle">
+                No matter what happens, I’ve got you. Always.
+            </p>
+            <p id="finale-signature">~ from someone unwavering</p>
+        </section>
+        <iframe
+            id="yt-music"
+            src="https://www.youtube.com/embed/g1-jofFiQts?autoplay=1&loop=1&playlist=g1-jofFiQts&controls=0&mute=0"
+            style="display: none"
+            allow="autoplay"
+        >
+        </iframe>
+        <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
